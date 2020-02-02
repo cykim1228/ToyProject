@@ -29,8 +29,6 @@
 #### 2) 
 
 ## 6. 프로토타입
-<img src="./ProtoType/가계부_로그인.png" width="49%">
-<img src="./ProtoType/가계부_월별.png" width="49%">
-<img src="./ProtoType/가계부_일별.png" width="49%">
-<img src="./ProtoType/가계부_통계.png" width="49%">
+<img src="./ProtoType/가계부_로그인.png" width="49%"><img src="./ProtoType/가계부_월별.png" width="49%">
+<img src="./ProtoType/가계부_일별.png" width="49%"><img src="./ProtoType/가계부_통계.png" width="49%">
 <img src="./ProtoType/가계부_설정.png" width="49%">
