@@ -4,6 +4,7 @@
 
 ## 0.링크
 #### <a href="https://bit.ly/2vbsujA" target="_blank">[링크] 간트차트</a> 
+#### <a href="http://ssak.jandi.com" target="_blank">[링크] 잔디 협업 페이지</a>
 
 ## 1.주제
 #### 가계부 :poop:
