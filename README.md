@@ -3,7 +3,7 @@
 ###### Copyright 2020. 짠짠영/음함수미분/예사미. All rights reserved.
 
 ## 0.링크
-#### [간트차트](https://bit.ly/2vbsujA){: target="_blank"}
+#### <a href="https://bit.ly/2vbsujA" target="_blank">[링크] 간트차트</a>
 
 ## 1.주제
 #### 가계부 :poop:
