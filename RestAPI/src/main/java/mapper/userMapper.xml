@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper  PUBLIC "-//mybatis.org//DTD Config 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+
+<!-- namespace - 인터페이스에 있는 패키지 명 + 인터페이스 명 -->
+<mapper namespace="com.ssak.book.DAO.UserDAO">
+
+	<!-- 전체 사용자 조회 -->
+	<select id="getUserAllList" resultType="UserVO">
+    	SELECT
+    		userId, userPw, userName, userPhone, userBirth, userEmail, isAdmin
+    	FROM
+    		user u
+		ORDER BY
+			userName DESC
+    </select>
+
+</mapper>
