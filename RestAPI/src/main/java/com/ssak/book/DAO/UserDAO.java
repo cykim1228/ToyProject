@@ -6,6 +6,8 @@ import com.ssak.book.VO.UserVO;
 
 public interface UserDAO {
 	
-	List<UserVO> getUserAllList(); // 모든 유저 정보
+	public List<UserVO> getUserAllList() throws Exception; // 모든 유저 정보
+	
+	public int joinUser(UserVO userVO) throws Exception; // 유저 회원가입
 	
 }

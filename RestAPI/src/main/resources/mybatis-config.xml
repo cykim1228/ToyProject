@@ -19,11 +19,14 @@
 	        <!-- <setting name="callSettersOnNulls" value="true" /> -->
 	    </settings>
 
-         <typeAliases>
+		<!-- 2020.02.17. VO 객체 mybatis 에서의 사용을 위한 Alias 등록 -->
+		<typeAliases>
             <typeAlias type="com.ssak.book.VO.UserVO" alias="UserVO"/>
         </typeAliases>
+		
+		<!-- 2020.02.17. Mapper 사용을 위한 등록 -->
         <mappers>
-	        <package name="mapper"/>
+	        <package name="com.ssak.book.mappers"/>
 	    </mappers>
 	    
     </configuration>

@@ -2,7 +2,7 @@
 <!DOCTYPE mapper  PUBLIC "-//mybatis.org//DTD Config 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
 
 <!-- namespace - 인터페이스에 있는 패키지 명 + 인터페이스 명 -->
-<mapper namespace="com.ssak.book.DAO.UserDAO">
+<mapper namespace="com.ssak.book.mappers.userMapper">
 
 	<!-- 전체 사용자 조회 -->
 	<select id="getUserAllList" resultType="UserVO">
@@ -12,6 +12,14 @@
     		user u
 		ORDER BY
 			userName DESC
+    </select>
+    
+    <!-- 사용자 회원가입 -->
+	<select id="joinUser" resultType="UserVO">
+    	INSERT INTO
+    		user (userId, userPw, userName, userPhone, userBirth, userEmail)
+    	VALUES
+    		(#{userId}, #{userPw}, #{userName}, #{userPhone}, #{userBirth}, #{userEmail})
     </select>
 
 </mapper>
