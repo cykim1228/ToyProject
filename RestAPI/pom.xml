@@ -116,6 +116,68 @@
 			<version>4.7</version>
 			<scope>test</scope>
 		</dependency>        
+		
+		<!-- 2020.02.13. API 문서화를 위한 Swagger 라이브러리 추가 -->
+		<dependency>
+			<groupId>io.springfox</groupId>
+			<artifactId>springfox-swagger2</artifactId>
+			<version>2.6.1</version>
+		</dependency>
+		
+		<dependency>
+			<groupId>io.springfox</groupId>
+			<artifactId>springfox-swagger-ui</artifactId>
+			<version>2.6.1</version>
+		</dependency>
+		
+		<!-- 2020.02.13. 데이터를 json 형태로 제공해주기 위한 Jackson-databind 추가 -->
+		<dependency>
+			<groupId>com.fasterxml.jackson.core</groupId>
+			<artifactId>jackson-databind</artifactId>
+			<version>2.6.4</version>
+		</dependency>
+		
+		<!-- 2020.02.13. 데이터베이스 연동을 위한 MyBatis 라이브러리 추가 -->
+		<dependency>
+	        <groupId>org.mybatis</groupId>
+	        <artifactId>mybatis</artifactId>
+	        <version>3.5.0</version>
+	    </dependency>
+	    <dependency>
+	        <groupId>org.mybatis</groupId>
+	        <artifactId>mybatis-spring</artifactId>
+	        <version>2.0.0</version>
+	    </dependency>
+	    <dependency>
+	        <groupId>org.springframework</groupId>
+	        <artifactId>spring-jdbc</artifactId>
+	        <version>${org.springframework-version}</version>
+	    </dependency>
+        <dependency>
+            <groupId>org.springframework</groupId>
+            <artifactId>spring-test</artifactId>
+            <version>${org.springframework-version}</version>
+        </dependency>
+        <dependency>
+            <groupId>org.bgee.log4jdbc-log4j2</groupId>
+            <artifactId>log4jdbc-log4j2-jdbc4</artifactId>
+            <version>1.16</version>
+        </dependency>
+        
+        <!-- 2020.02.13. MySQL 연동을 위한 MySQL Connector 라이브러리 추가 -->
+		<dependency>
+			<groupId>mysql</groupId>
+			<artifactId>mysql-connector-java</artifactId>
+			<version>5.1.31</version>
+		</dependency>
+
+		<!-- 2020.02.14. Lombok 사용을 위한 라이브러리 추가 -->
+		<dependency>
+			<groupId>org.projectlombok</groupId>
+			<artifactId>lombok</artifactId>
+			<version>1.18.12</version>
+		</dependency>
+		
 	</dependencies>
     <build>
         <plugins>

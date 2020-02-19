@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE configuration 
+    PUBLIC "-//mybatis.org//DTD Config 3.0//EN"
+    "http://mybatis.org/dtd/mybatis-3-config.dtd">
+
+	<configuration>
+	
+        <settings>
+	        <!-- http://www.mybatis.org/mybatis-3/ko/configuration.html -->
+	        <setting name="cacheEnabled" value="true"/>
+	        <setting name="lazyLoadingEnabled" value="false"/>
+	        <setting name="multipleResultSetsEnabled" value="true"/>
+	        <setting name="useColumnLabel" value="true"/>
+	        <setting name="useGeneratedKeys" value="false"/>
+	        <setting name="defaultExecutorType" value="SIMPLE"/>
+	        <setting name="defaultStatementTimeout" value="25000"/>
+	        <setting name="mapUnderscoreToCamelCase" value="true"/>
+	        <setting name="jdbcTypeForNull" value="VARCHAR"/>
+	        <!-- <setting name="callSettersOnNulls" value="true" /> -->
+	    </settings>
+
+		<!-- 2020.02.17. VO 객체 mybatis 에서의 사용을 위한 Alias 등록 -->
+		<typeAliases>
+            <typeAlias type="com.ssak.book.VO.UserVO" alias="UserVO"/>
+        </typeAliases>
+		
+		<!-- 2020.02.17. Mapper 사용을 위한 등록 -->
+        <mappers>
+	        <package name="com.ssak.book.mappers"/>
+	    </mappers>
+	    
+    </configuration>
