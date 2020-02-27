@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+
+<mapper namespace="UserMapper">
+
+	<resultMap id="userList" type="userVO">
+		<result property="userId" column="userId" />
+		<result property="userPw" column="userPw" />
+		<result property="userName" column="userName" />
+		<result property="userPhone" column="userPhone" />
+		<result property="userBirth" column="userBirth" />
+ 		<result property="userEmail" column="userEmail" />
+		<result property="isAdmin" column="isAdmin" />
+	</resultMap>
+    
+    <!-- 사용자 회원가입 -->
+	<insert id="insertUser" parameterType="userVO">
+    	INSERT INTO
+    		user (userId, userPw, userName, userPhone, userBirth, userEmail)
+    	VALUES
+    		(#{userId}, #{userPw}, #{userName}, #{userPhone}, #{userBirth}, #{userEmail})
+    </insert>
+    
+</mapper>

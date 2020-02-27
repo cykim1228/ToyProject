@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans 
+	xmlns="http://www.springframework.org/schema/beans" 
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xmlns:jdbc="http://www.springframework.org/schema/jdbc"
+	xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans-4.0.xsd 
+	 						http://www.springframework.org/schema/util http://www.springframework.org/schema/util/spring-util-4.0.xsd">
+	
+	<!-- MySQL -->
+	<!-- <beans profile="mysql">  
+		<bean id="dataSource" class="org.apache.commons.dbcp.BasicDataSource" destroy-method="close">
+			<property name="driverClassName" value="com.mysql.jdbc.Driver"/>
+			<property name="url" value="jdbc:mysql://ssak-db.ctkv8lt8uzvk.us-east-1.rds.amazonaws.com:3306/Ssak-Book?autoReconnect=true" />
+			<property name="username" value="ssak"/>
+			<property name="password" value="1q2w3e4r5t"/>
+		</bean>
+	</beans> -->
+	
+	<bean id="dataSource" class="org.apache.commons.dbcp.BasicDataSource" destroy-method="close">
+		<property name="driverClassName" value="com.mysql.jdbc.Driver"/>
+		<property name="url" value="jdbc:mysql://ssak-db.ctkv8lt8uzvk.us-east-1.rds.amazonaws.com:3306/Ssak-Book?serverTimezone=UTC" />
+		<property name="username" value="ssak"/>
+		<property name="password" value="1q2w3e4r5t"/>
+	</bean>
+    
+    <!-- DB Pool이 생성이 되더라고 특정 시간 호출되지 않으면 DBMS 설정에 따라 연결을 끊어질 때
+		이 경우 DBCP를 사용하셨다면.. 다음과 같은 설정을 추가하시면 연결을 유지시켜 줍니다. -->
+	<!--
+	<property name="validationQuery" value="select 1 from dual" />
+	<property name="testWhileIdle" value="true" />
+	<property name="timeBetweenEvictionRunsMillis" value="60000" /> -->  <!-- 1분 -->
+
+	<!-- DBCP가 아닌 WAS의 DataSource를 사용하시는 경우도 WAS별로 동일한 설정을 하실 수 있습니다.
+		(WAS별 구체적인 설정은 WAS document 확인) -->
+</beans>

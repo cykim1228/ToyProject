@@ -22,7 +22,6 @@ th, td {
 </style>
 
 <body>
-
 	<table>
 		<thead>
 			<tr>
@@ -47,6 +46,5 @@ th, td {
 			</c:forEach>
 		</tbody>
 	</table>
-	
 </body>
 </html>
